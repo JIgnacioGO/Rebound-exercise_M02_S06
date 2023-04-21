@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Metadatos -->
+	<meta name="author" content="Juan Gutiérrez">
+	<meta name="description" content="Ejercicio de comprobacion Modulo 2 - Sesion 6">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Titulo -->
+	<title>Rebound Exercise M02 - S06</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="Assets/CSS/style.css">
+	<!-- CSS Bootstrap v5.2 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!-- Formulario -->
+	<section class="container-fluid p-3">
+		<form action="/redireccion-formulario.html">
+			<div class="row mx-3">
+				<div class="col-md-4 mb-3">
+					<label for="inputNombre" class="form-label">Nombre</label>
+					<input type="text" class="form-control" id="inputNombre" placeholder="Nombre" value="Marcos" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="inputApellido" class="form-label">Apellido</label>
+					<input type="text" class="form-control" id="inputApellido" placeholder="Apellido" value="Ortega" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="inputUsername" class="form-label">Nombre de usuario</label>
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<input type="text" class="form-control" id="inputUsername" placeholder="Username"
+							value="marO" required aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+				</div>
+			</div>
+			<div class="row mx-3">
+				<div class="col-md-6 mb-3">
+					<label for="inputCiudad" class="form-label">Ciudad</label>
+					<input type="text" class="form-control" id="inputCiudad" placeholder="Ciudad" value="New York" required>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="inputMotivo" class="form-label">Motivo</label>
+					<select class="form-select" id="inputMotivo">
+						<option selected>Deposito</option>
+						<option value="1">Giro</option>
+						<option value="2">Consulta de Saldo</option>
+					</select>
+				</div>
+			</div>
+			<div class="row mx-1">
+				<div class="mb-3 form-check">
+					<label class="form-check-label" for="flexCheckDefault">
+						¿Desea ver la respuesta en pantalla?
+					</label> <br>
+					<input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault" checked > Si
+				</div>
+			</div>
+			<div class="mb-3 mx-4">
+				<button type="submit" class="btn btn-primary">Solicitar</button>
+			</div>
+		</form>
+	</section>
+
+
+
+	<!-- Script Bootstrap v5.2 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
